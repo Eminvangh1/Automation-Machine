@@ -20,9 +20,9 @@
 
             }
             Console.WriteLine("Select a Product");
-            int vote = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
-            double productprice = prices[vote];
+            double productprice = prices[a];
             double totalbalance = 0;
 
             while (totalbalance < productprice)
@@ -38,7 +38,7 @@
             }
 
 
-            Console.WriteLine($"{prices[vote]}product purchased Total Balance: {totalbalance} TL");
+            Console.WriteLine($"{prices[a]}product purchased Total Balance: {totalbalance} TL");
 
             if (totalbalance > productprice)
             {
